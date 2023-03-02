@@ -84,6 +84,19 @@ document.getElementById("startButton").addEventListener("click", function() {
       
     }
 
+    //Emmanuel
+ //Display parts
+ const figureParts= document.querySelectorAll(".figure-part");
+
+ figureParts.forEach((part,index) => {
+
+  if(remainingTries == 0) {
+      part.style.display = 'block'
+  }
+  else{
+      part.style.display = 'none';
+  }
+});
     
     
   });
