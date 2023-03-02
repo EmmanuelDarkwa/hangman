@@ -71,9 +71,14 @@ document.getElementById("startButton").addEventListener("click", function() {
       document.getElementById("message").innerHTML = "You lose! The word was: " + word;
       remainingTries = 7;
     }
-
-    
-    
-  });
-});
-
+      //Emmanuel changes
+      //Display parts
+      figureParts.forEach((part,index) => {
+        const errors = wrongLetters.length;
+        if (remainingTries <= 0){
+          part.style.display = 'block'
+        }  else{
+          part.style.display = 'none'
+        }
+      });
+   
