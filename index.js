@@ -83,22 +83,9 @@ document.getElementById("startButton").addEventListener("click", function() {
       
       
     }
+
+    
+    
   });
-
- //Display parts
- const figureParts= document.querySelector(".figure-part");
-
-    figureParts.forEach((part,index) => {
-       
-
-        if(remainingTries == 0) {
-            part.style.display = 'block'
-        }
-        else{
-            part.style.display = 'none';
-        }
-    });
-
-
 });
 
